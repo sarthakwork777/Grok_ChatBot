@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus AI | Premium Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="main-header">
+            <div class="logo">NEXUS <span>AI</span></div>
+            <button id="clear-btn" title="Clear Chat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18m-2 0v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6m3 0V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+            </button>
+        </header>
+
+        <main id="chat-box" class="chat-scroll-area">
+            <div class="welcome-screen">
+                <h2>How can I assist you today?</h2>
+                <p>Experience high-speed intelligence powered by Groq.</p>
+            </div>
+        </main>
+
+        <footer class="input-container">
+            <div class="input-wrapper">
+                <div id="typing-indicator" class="typing-dot-container hidden">
+                    <span></span><span></span><span></span>
+                </div>
+                <input type="text" id="user-input" placeholder="Ask Nexus anything..." autocomplete="off">
+                <button id="send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+            <p class="footer-note">Precision AI • Groq Llama 3.3</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
